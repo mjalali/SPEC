@@ -161,3 +161,10 @@ body {
   -webkit-text-fill-color: transparent;
   font-weight: 900;
 }
+
+.spec-gradient {
+  background: radial-gradient(circle at center, #d7de06 0%, #ffde5e 30%, #3d009f 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
