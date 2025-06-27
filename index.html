@@ -255,7 +255,6 @@
         </div>
       </div>
     </div>
-
     <!-- <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
@@ -272,11 +271,12 @@
 <section class="hero teaser">
   <div class="container is-max-desktop has-text-centered">
     <div class="section">
-      <h2 class="title is-3">Overview of SPEC framework: Comparison and Alignment</h2>
+      <h2 class="title is-3">Overview of SPEC: Comparison and Alignment of Embeddings</h2>
       <img src="./static/images/figure_1.png">
       </img>
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">SPEC</span> significantly enhances prompt-aware diversity in text-to-image diffusion models with high computational efficiency.
+        <span class="dnerf">SPEC</span> performs an eigendecomposition of the difference of kernel matrices following the two compared embeddings on a given
+        reference dataset. SPEC-align optimizes the alignment of two embeddings by minimizing the SPEC-diff.
       </h2>
     </div>
   </div>
@@ -290,13 +290,16 @@
       <div class="swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="./static/images/pixart_qualitative_sparke.jpg" class="carousel-image" />
+            <img src="./static/images/clip-roberta_toy_example.png" class="carousel-image" />
           </div>
           <div class="swiper-slide">
-            <img src="./static/images/sdxl_qualitative_sparke.jpg" class="carousel-image" />
+            <img src="./static/images/clip-e5_toyexample.png" class="carousel-image" />
           </div>
           <div class="swiper-slide">
-            <img src="./static/images/conditional_vs_unconditional_extended_sparke.jpg" class="carousel-image" />
+            <img src="./static/images/roberta_e5_mscoco_captions.png" class="carousel-image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./static/images/wikitext2_roberta_clip.png" class="carousel-image" />
           </div>
         </div>
 
@@ -319,13 +322,16 @@
       <div class="swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="./static/images/pixart_qualitative_sparke.jpg" class="carousel-image" />
+            <img src="./static/images/clip-dino_imagenette.png" class="carousel-image" />
           </div>
           <div class="swiper-slide">
-            <img src="./static/images/sdxl_qualitative_sparke.jpg" class="carousel-image" />
+            <img src="./static/images/clip-dino_imagewoof.png" class="carousel-image" />
           </div>
           <div class="swiper-slide">
-            <img src="./static/images/conditional_vs_unconditional_extended_sparke.jpg" class="carousel-image" />
+            <img src="./static/images/afhq.jpg" class="carousel-image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./static/images/ffhq.jpg" class="carousel-image" />
           </div>
         </div>
 
@@ -348,13 +354,39 @@
       <div class="swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="./static/images/pixart_qualitative_sparke.jpg" class="carousel-image" />
+            <img src="./static/images/alignment_imagenette.jpg" class="carousel-image" />
           </div>
           <div class="swiper-slide">
-            <img src="./static/images/sdxl_qualitative_sparke.jpg" class="carousel-image" />
+            <img src="./static/images/alignment_imagewoof.jpg" class="carousel-image" />
           </div>
           <div class="swiper-slide">
-            <img src="./static/images/conditional_vs_unconditional_extended_sparke.jpg" class="carousel-image" />
+            <img src="./static/images/align_kernels.jpg" class="carousel-image" />
+          </div>
+        </div>
+
+        <!-- Navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- Optional pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop has-text-centered">
+      <h2 class="title is-3">Comparing similarity ranking for SPEC clusters </h2>
+
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./static/images/sanity_FFHQ.jpg" class="carousel-image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./static/images/sanity_AFHQ.jpg" class="carousel-image" />
           </div>
         </div>
 
